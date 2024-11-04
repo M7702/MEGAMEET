@@ -1,0 +1,16 @@
+body{
+    width: 86%;
+    margin: auto;
+}
+
+.signIncontainer{
+    border: black solid 1px;
+    width: 40%;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    
+}

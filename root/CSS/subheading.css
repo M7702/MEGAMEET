@@ -1,0 +1,128 @@
+
+.wrapper1 {
+  padding: 35px;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 13px;
+  flex: 3.5;
+}
+.subheader{
+  display: flex;
+  width: 100%;
+  background-color: #000;
+  height: 55px;
+  overflow: hidden;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+}
+.subheader:hover{
+  background-color: #fff;
+}
+
+
+.subheader .filter_bar{
+  flex: 1;
+  align-self: flex-start;
+  border: white solid 1px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.subheader .filter_bar .filter_button{
+  flex: 0.8;
+  height: 90%;
+  font-size: 1.5em;
+  background-color: #fff;
+}
+.subheader .filter_bar .filter_button:hover{
+  flex: 0.7;
+  height: 90%;
+  font-size: 1.5em;
+  background-color: #000;
+  color: #fff;
+}
+
+.wrapper1 .icon1 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.wrapper1 .icon1:first-child {
+  left: 0;
+  display: none;
+  background: linear-gradient(90deg, #fff 70%, transparent);
+}
+.wrapper1 .icon1:last-child {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(-90deg, #fff 70%, transparent);
+}
+.icon1 i {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+}
+.icon1 i:hover {
+  background: #efedfb;
+}
+.icon1:first-child i {
+  margin-left: 15px;
+} 
+.icon1:last-child i {
+  margin-right: 15px;
+} 
+.wrapper1 .tabs-box {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.tabs-box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+.tabs-box .tab {
+  cursor: pointer;
+  font-size: 1.18rem;
+  white-space: nowrap;
+  background: #f5f4fd;
+  padding: 5px 20px;
+  border-radius: 30px;
+  border: 1px solid #d8d5f2;
+}
+.tabs-box .tab:hover{
+  background: #efedfb;
+}
+.tabs-box.dragging .tab {
+  user-select: none;
+  pointer-events: none;
+}
+.tabs-box .tab.active{
+  color: #fff;
+  background: #7245FF;
+  border-color: transparent;
+}
+
+
+@media screen and (max-width: 992px) {
+  button i.icon{
+    display: none;
+  }
+}

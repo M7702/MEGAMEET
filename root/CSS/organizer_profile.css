@@ -1,0 +1,575 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+width: 86%;
+margin: auto;
+background-color: white;
+border: red solid 1px;
+}
+
+
+
+.organizer_dashboard{
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+
+
+  position: relative;
+
+}
+.organizer_dashboard .menu{
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  border-right: #000 solid 1px;
+  position: sticky;
+}
+.menu .big_logo{
+  margin-top: 1em;
+  margin-left: 1em;
+  align-self: flex-start;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  background-color: white;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  object-position: center;
+  
+}
+.big_logo a{
+padding: 0;
+}
+.menu .big_logo img{
+
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+object-fit: cover;
+object-position: center;
+}
+.menu .profile_pages{
+  width: 80%;
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.menu .profile_pages ul{
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  overflow: hidden;
+  list-style: none;
+  font-size: 1.2em;
+}
+.menu .profile_pages ul li{
+  /* padding: 1em; */
+  background-color: #7245FF;
+  min-width: 100%;
+  display: flex;
+  border-radius: 2em;
+  text-align: center;
+}
+.menu  a{
+padding: 1em;
+width: 100%;
+color: #fff;
+text-decoration: none;
+
+}
+.name_email p{
+
+}
+
+.menu .profile_pages ul li:hover{
+/* padding: 1em; */
+background-color: #000;
+min-width: 100%;
+display: flex;
+}
+.organizer_booked_events{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+
+  height: 100%;
+  width: 70%;
+  /* background-color: aqua; */
+
+  position: relative;
+
+  /* scroll for big screen */
+  /* overflow-y: scroll; */
+}
+.scrolling_page{
+  height: 200vh;
+  width: 90%;
+  /* background-color: aquamarine; */
+  position: absolute;
+}
+
+
+
+a:is(:link, :active, :visited).active{
+  color: #000;
+  background-color: #8BC4BB;
+  border-radius: 2em;
+
+}
+a:is(:link, :active, :visited).active:hover{
+color: #fff;
+background-color: #000;
+}
+
+.profile_info{
+  display: flex;
+}
+.profile_info .scrolling{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+
+  height: 80%;
+  width: 80%;
+}
+.profile_info .profile_image{
+  justify-self: flex-start;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  object-position: center;
+}
+.profile_image img{
+
+height: 80px;
+width: 80px;
+border-radius: 50%;
+object-fit: cover;
+object-position: center;
+}
+
+
+.name_email{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  width: 80%;
+
+  border: 1px solid black;
+border-radius: 1em;
+}
+.name_email div{
+  width: 100%;
+}
+
+
+
+/* header */
+
+.header {
+      display: none;
+      height: 55px;
+      width: 100%;
+      background-color: #e9ecef;
+      opacity: 0.9;
+      margin: auto;
+      z-index: 100;
+      flex-direction: row;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+    }
+    
+    .header_logo {
+      height: 55px;
+      margin-left: 0.8em;
+    }
+    
+    .header_logo img {
+      height: 55px;
+      justify-content: flex-start;
+    
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    
+    .left_header {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    
+      margin-right: 1em;
+    }
+    
+    .sign_cart {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+      margin-left: 0.8em;
+      margin-right: 0.8em;
+    }
+    
+    
+    .account {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+      border: black solid 1px;
+      border-radius: 0.5em;
+      padding: 5px;
+    }
+    
+    .account .account_icon {
+      height: 25px;
+      align-self: center;
+    }
+    
+    .account .account_icon img {
+      height: 25px;
+    }
+    
+    .sidebar_button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .sidebar_button .sidebar_icon {
+      height: 25px;
+      margin-left: 1em;
+    }
+    
+    .sidebar_button .cross_icon {
+      height: 25px;
+      display: none;
+    }
+     
+  
+  
+  /* sidebar */
+  nav{
+    display: none;
+    min-height: 600px;
+    max-width: 400px;
+    min-width: 300px;
+    position: fixed;
+    top: 8%;
+    right:7%;
+    
+    scroll-behavior: smooth;
+  
+    overflow-y:scroll;
+    z-index: 5;
+  }
+  
+  nav.open{
+    display: block;
+  }
+  
+  nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+  }
+  .logo .menu-icon {
+    color: #333;
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+  }
+  .logo .logo-name {
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  nav .sidebar {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 280px;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+  nav.open .sidebar {
+    left: 0;
+  }
+  .sidebar .sidebar-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+  }
+  .sidebar-content .list {
+    list-style: none;
+  }
+  .list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .lists .nav-link:hover {
+    background-color: #7245FF;
+  }
+  .nav-link .icon {
+    margin-right: 14px;
+    font-size: 20px;
+    color: #707070;
+  }
+  .nav-link .link {
+    font-size: 16px;
+    color: #707070;
+    font-weight: 400;
+  }
+  .lists .nav-link:hover .icon,
+  .lists .nav-link:hover .link {
+    color: #fff;
+  }
+
+  /* small layout */
+
+  @media screen and (max-width: 992px) {
+    body {
+      width: 94%;
+    }
+    .organizer_dashboard  .menu{
+      display: none;
+    }
+  
+    .header {
+      display: flex;
+      width: 100%;
+    }
+  
+    .header_logo {
+      margin-left: 0.1em;
+      margin-right: 0.2em;
+    }
+    .profile_info{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+
+
+    .scrolling{
+        height: 800px;
+        width: 90%;
+        margin: auto;
+        background-color: white;
+    }
+
+    .nav{
+        width: 100%;
+      }
+      nav .sidebar{
+        width: 100%;
+      }
+     
+        body {
+          width: 94%;
+        }
+        .organizer_booked_events{
+          overflow: hidden;
+        }
+        .scrolling_page{
+          height: auto;
+        }
+
+
+        .organizer_dashboard{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .organizer_booked_events{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 1em;
+          flex: 1;
+          height: 100%;
+          width: 100%;
+          background-color: #fff;
+      
+          position: relative;
+          /* for large screen */
+          /* overflow-y: scroll; */
+      }
+      .scrolling_page{
+          /* height: 200vh; */
+          width: 90%;
+          /* flex: 0.8; */
+          background-color: #ffffff;
+          position: absolute;
+      }
+
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      width: 100%;
+    }
+  
+    .header {
+      width: 100%;
+      height: auto;
+      
+      justify-content: space-between;
+    }
+  
+    .header_logo {
+      margin-left: 0em;
+      margin-right: 0.2em;
+    }
+    
+    .organizer_dashboard{
+      display: flex;
+      flex-direction: row;
+      
+      justify-content: center;
+      align-items: center;
+    }
+    .organizer_booked_events{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1em;
+      flex: 1;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+  
+      position: relative;
+  
+
+      /* change for other pages */
+      overflow-y: hidden;
+  }
+  .scrolling_page{
+      /* height: 200vh; */
+      width: 90%;
+      /* flex: 0.8; */
+      background-color: #fff;
+      position: absolute;
+  }
+
+
+  }
+/* ---------------------------------- */
+@media screen and (max-width: 992px) {
+  
+
+  .profile_info{
+              width: 50%;
+
+  }
+  nav.open{
+      display: block;
+    }
+  }
+  
+
+
+  @media screen and (max-width: 600px) {
+ 
+  .profile_info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+  
+      height: 100%;
+      width: 100%;
+  }
+  .profile_info .profile_image{
+      justify-self: flex-start;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: black;
+  }
+  
+  
+  .name_email{
+      display: flex;
+      flex-direction: column;
+      height: 40%;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+  
+      width: 80%;
+  }
+  .name_email div{
+      width: 100%;
+  }
+  
+  }
+
+
+
+
+
+
+

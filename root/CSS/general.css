@@ -1,0 +1,30 @@
+
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+body {
+  width: 86%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+      width: 94%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      width: 100%;
+    }
+
+  }

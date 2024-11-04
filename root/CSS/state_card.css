@@ -1,0 +1,118 @@
+
+.india_state .wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.india_state .wrapper i {
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.india_state .wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.india_state .wrapper i:first-child{
+  z-index: 5;
+  left: -22px;
+}
+.india_state .wrapper i:last-child{
+  right: -22px;
+}
+.india_state .wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.india_state .wrapper .carousel::-webkit-scrollbar {
+  display: none;
+}
+.india_state .wrapper .carousel.no-transition {
+  scroll-behavior: auto;
+}
+.india_state .wrapper .carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.india_state .wrapper .carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.india_state .wrapper .carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.india_state .wrapper .carousel .card {
+  scroll-snap-align: start;
+  height:15em;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+.india_state .wrapper .carousel .card .img {
+  background: #8BC4BB;
+  /* height: 148px; */
+  height: 90%;
+  width: 100%;
+  /* border-radius: 1em; */
+  /* border-radius: 50%; */
+  /* position: relative; */
+}
+.india_state .wrapper .card .img img {
+  border-radius: 1em;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 3/4;
+  border: 4px solid #fff;
+}
+.india_state .wrapper .carousel .card h2 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 30px 0 5px;
+}
+.india_state .wrapper .carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .india_state .wrapper {
+    width: 94%;
+
+  }
+  .india_state .wrapper  .carousel {
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .india_state .wrapper .carousel {
+    width: 100%;
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}

@@ -1,0 +1,269 @@
+
+
+
+.header{
+  background-color: rgb(207, 194, 194);
+}
+
+.header {
+  height: 55px;
+  width: 100%;
+  background-color: #e9ecef;
+  opacity: 0.9;
+  margin: auto;
+
+
+
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  
+  position: sticky;
+  top: 0;
+}
+
+.header_logo {
+  height: 55px;
+  margin-left: 0.8em;
+}
+
+.header_logo img {
+  height: 55px;
+  justify-content: flex-start;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.header .header_serch_bar {
+  display: none !important;
+  flex: 1;
+  justify-content: center;
+  min-width: 200px;
+  max-width: 300px;
+  overflow: hidden;
+
+  align-self: center;
+  
+}
+.location_input{
+  display: none !important;
+}
+.header .header_serch_bar .search-bar {
+  flex: 1;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+
+  min-width: 200px;
+  padding-left: 5px;
+  white-space: none;
+
+  display: none !important;
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+}
+
+.search-button {
+  height: 40px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+
+  display: none !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-icon,
+.location-icon {
+  height: 25px;
+}
+
+.header .location_input {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  border-radius: 1em;
+  min-width: 150px;
+  max-width: 300px;
+  padding: 0.5em;
+}
+
+.header .location_input img {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.header .location_input .location {
+  padding: 0.5em;
+  flex: 1;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.left_header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-right: 1em;
+}
+
+.instagram_icon {
+  height: 27px;
+}
+
+.instagram_icon img {
+  height: 27px;
+}
+
+.sign_cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.header_cart {
+  height: 25px;
+  margin-right: 1em;
+  position: relative;
+}
+
+.header_cart img {
+  height: 25px;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: black solid 1px;
+  border-radius: 0.5em;
+  padding: 5px;
+}
+
+.account .signin {
+  margin-right: 5px;
+}
+
+.account .account_icon {
+  height: 25px;
+  align-self: center;
+}
+
+.account .account_icon img {
+  height: 25px;
+}
+
+.sidebar_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar_button .sidebar_icon {
+  height: 25px;
+  margin-left: 1em;
+}
+
+.sidebar_button .cross_icon {
+  height: 25px;
+  display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  
+  .header {
+    width: 100%;
+  }
+
+  .header_logo {
+    margin-left: 0.1em;
+    margin-right: 0.2em;
+  }
+
+  .header .header_serch_bar {
+    min-width: 100px;
+  }
+
+  .header .header_serch_bar .search-bar {
+    min-width: 100px;
+  }
+
+  .header .location_input {
+    min-width: 150px;
+    max-width: 200px;
+  }
+
+  .header .location_input .location {
+    padding: 0.5em;
+    max-width: 120px;
+    min-width: 100px;
+    flex: 0.5;
+  }
+
+  .instagram_icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .header_logo {
+    margin-left: 0em;
+    margin-right: 0.2em;
+  }
+
+  .header .header_serch_bar {
+    min-width: 100%;
+    order: 3;
+    margin: 0;
+  }
+
+  .header .location_input {
+    display: none;
+  }
+
+  .search-button {
+    margin: 0;
+  }
+}

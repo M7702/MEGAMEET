@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.custom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3em;
+
+
+    
+    font-family: 'Poppins';
+    min-height: 400px;
+
+    margin-bottom: 2em;
+}
+
+.custom .custom_planer{
+    width: 45%;
+    
+    border-radius: 2em;
+    height: 350px;
+}
+
+.custom .oraganizing_event{
+    width: 45%;
+    
+    border-radius: 2em;
+    height: 350px;
+
+}
+
+
+a.custom_planer{
+  text-wrap: wrap;
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* color: black; */
+  margin: auto;
+  background: url('../IMAGES/CUSTOM/amdavad-ni-gufa.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+
+}
+div.custom_planer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  
+  margin: auto;
+  text-wrap: nowrap;
+  font-size: 2em;
+  font-weight: 600;
+  font-style: italic;
+
+}
+a.oraganizing_event{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+
+  margin: auto;
+  
+  background: url('../IMAGES/CUSTOM/Don-Hill-Station-Thumbnail.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+ 
+
+}
+div.oraganizing_event{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: auto;
+  text-wrap: nowrap;
+  font-size: 2em;
+  font-weight: 800;
+  font-style: italic;
+  filter:opacity(3);
+}
+
+@media screen and (max-width: 1300px) {
+  
+
+  
+  
+  
+  div.oraganizing_event{
+    text-wrap: wrap;
+    font-size: 2em;
+   
+  
+  }
+  
+  
+  
+  }
+  
+  
+@media screen and (max-width: 992px) {
+  
+div.custom_planer{
+
+  text-wrap: wrap;
+  font-size: 1.5em;
+
+
+}
+
+
+
+div.oraganizing_event{
+  text-wrap: wrap;
+  font-size: 1.5em;
+ 
+
+}
+
+
+
+}
+
+
+  @media screen and (max-width: 600px) {
+    .custom {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 800px;
+    }
+    .custom .custom_planer{
+        width: 90%;
+        
+        height: 350px;
+    }
+    
+    .custom .oraganizing_event{
+        width: 90%;
+    
+        height: 350px;
+    
+    }
+    
+
+
+div.custom_planer{
+
+  text-wrap: nowrap;
+  font-size: 2em;
+
+
+}
+
+div.oraganizing_event{
+
+  text-wrap: wrap;
+  font-size: 2em;
+
+
+}
+}
+
+  
