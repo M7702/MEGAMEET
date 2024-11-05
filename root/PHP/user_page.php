@@ -1,4 +1,5 @@
 <?php
+// comment is here
 
 @include 'config.php';
 
